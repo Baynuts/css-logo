@@ -1,0 +1,271 @@
+body {
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-weight: 700;
+    color: #000;  
+    font-size: 2em;
+}
+
+.container {
+    position: fixed;
+    width:800px;
+    overflow: hidden;
+}
+
+#top-text {
+   position: relative;
+   top: 0;
+   left: 40%;
+   margin-bottom: 4%;
+   z-index: 100;
+}
+
+#main-text {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.5em;
+    position: absolute;
+    top: 27px;
+    left: 10%;
+    z-index: 101;
+   
+}
+
+#bottom-text {
+   position: relative;
+   top: 12px;
+   left: 40%;
+   z-index: 102;
+}
+
+#small-tree {
+    display: inline-block;
+    height: 300px;
+    width: 150px;
+}
+
+.small-tree-leaves {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #91B82B;
+    position: relative;
+    left: 50px;
+    top: 50px;
+    animation: small-color 5s infinite ease-in-out;
+    animation-direction: alternate-reverse;
+    z-index: 10;
+    
+}
+
+@keyframes small-color {
+    from{ background-color: #91B82B;}
+    to{ background-color: #CEEE43;  }
+}
+
+.small-tree-trunk {
+    left: 90px;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7.5px 150px 7.5px;
+    border-color: transparent transparent #954019 transparent;
+    z-index: 11;
+}
+
+#big-tree {
+display: inline-block;
+    height: 300px;
+    width: 150px;
+    
+}
+.big-tree-leaves {
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    background-color: #CEEE43;
+    position: relative;
+    left: -48px;
+    top: -22px;
+    z-index: -1;
+    animation: big-color 5s infinite ease-in-out;
+    animation-direction: alternate-reverse;
+    z-index: 8
+    
+}
+
+@keyframes big-color {
+    from{ background-color: #CEEE43;}
+    to{ background-color:  #91B82B; }
+}
+
+.big-tree-trunk {
+    left: 14px;
+    top: -99px;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 200px 10px;
+    border-color: transparent transparent #954019 transparent;
+    z-index: 9;
+}
+
+#upper-bridge {
+    display: inline-block;
+    width: 450px;
+    height: 100px;
+    border: solid 15px #000;
+    border-color: #954019 transparent transparent transparent;
+    border-radius: 50%/110px 100px 10px 10px;
+    position: relative;
+    left: -206px;
+    top: -56px;
+    z-index: 7;
+}
+
+#lower-bridge {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    border-top: solid 10px #BC8A65;
+    border-left: solid 5px #BC8A65;
+    border-right: solid 50px #BC8A65;
+    border-color: #BC8A65 #BC8A65 transparent #BC8A65;
+    border-radius: 50% 50% 50% 50% /80% 80% 10% 10%;
+    position: relative;
+    left: 220px;
+    top: -166px;
+    z-index: 6;
+}
+
+#water {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    border-left: solid 170px transparent;
+    border-bottom: 1px solid transparent;
+    border-color: transparent transparent #0EA8B4 #0EA8B4;
+    border-radius: 0% 0% 0% 90% /0% 0% 0% 90%;
+    position: relative;
+    left: -27px;
+    top: -71px;
+    z-index: 0;
+}
+
+.flow {    
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 75px;
+    left: 280px;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 45%;
+    background: rgba(255, 255, 255, .2);
+    animation: stream 35s infinite linear;
+    z-index: 1;
+}
+
+.flow-2 {    
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 75px;
+    left: 322px;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 45%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: stream 35s infinite linear;
+  z-index: 2;
+}
+
+.flow-3 {    
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 75px;
+    left: 368px;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 45%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: stream 35s infinite linear;
+  z-index: 3;
+}
+
+.flow-4 {    
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 75px;
+    left: 399px;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 45%;
+    background: rgba(255, 255, 255, 0.2);
+    animation: stream 35s infinite linear;
+  z-index: 4;
+}
+
+@keyframes stream {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+.red {color: #e01020;}
+.orange {color: #ef8f14;}
+.yellow {color:#ffea1d;}
+.l-green {color: #ceee43;}
+.l-blue {color: #0fa7d8;}
+.blue {color: #001aed;}
+.purple {color: #8c04ea;}
+.pink {color: #e91bae;}
+.green {color: #91b82b;}
+.l-brown {color: #bc8a65;}
+.brown { color: #954019;}
+.teal { color: #0ea8b4;}
+
+
+
+
+
+
+.cloud {
+    width: 40px;
+    height: 40px;
+    background: #F8F8F8;
+    border-radius: 200px 200px 0 200px;
+    position: relative;
+    animation-name: clouds;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: 90s;
+}
+
+.cloud:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: #F8F8F8;
+    border-radius: 200px 200px 200px 0;
+    top: -10px;
+    left: 80px;
+    position: absolute;
+}
+
+.cloud:after {
+    content: '';
+    width: 60px;
+    height: 70px;
+    background: #F8F8F8;
+    border-radius: 200px 200px 0 0;
+    top: -30px;
+    left: 35px;
+    position: absolute;
+}
+
+@keyframes clouds {
+    from {margin-left: -10px; }
+    to {margin-left: 100%;}
+}
