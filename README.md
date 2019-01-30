@@ -24,4 +24,4 @@ Basic school logo, created using only CSS. Animated clouds, trees and river.
 
 ## View
 The code can be viewed using GitHub pages: 
-https://baynuts.github.io/my-first-website/
+https://baynuts.github.io/css-logo/
