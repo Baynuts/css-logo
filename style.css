@@ -31,7 +31,7 @@ body {
 
 #bottom-text {
    position: relative;
-   top: 12px;
+   top: 0;
    left: 40%;
    z-index: 102;
 }
